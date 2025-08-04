@@ -1,5 +1,6 @@
 using System;
 using FaunaFiles.DataModel;
+using FaunaFilesAPP.Configuration;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -16,6 +17,8 @@ namespace FaunaFilesAPP
             {
                 option.UseSqlServer(builder.Configuration.GetConnectionString("Default"));
             });
+
+            builder.Services.AddAutoMapper(cfg => cfg.AddProfile<MapperConfig>());
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
