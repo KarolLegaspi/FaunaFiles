@@ -8,6 +8,7 @@ namespace FaunaFiles.DataModel
 {
     public class Vet
     {
+        //Inventory for Vet
         public int VetId { get; set; }
         public string FirstName { get; set; } 
         public string LastName { get; set; } 
