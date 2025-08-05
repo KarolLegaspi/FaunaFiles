@@ -15,7 +15,7 @@ namespace FaunaFilesAPP
             //Add Service to the container.
             builder.Services.AddDbContext<AppDbContext>(option =>
             {
-                option.UseSqlServer(builder.Configuration.GetConnectionString("Default"));
+                option.UseSqlServer(builder.Configuration.GetConnectionString("Submission"));
             });
 
             builder.Services.AddAutoMapper(cfg => cfg.AddProfile<MapperConfig>());
