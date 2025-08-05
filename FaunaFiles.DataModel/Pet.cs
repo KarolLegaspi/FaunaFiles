@@ -21,5 +21,7 @@ namespace FaunaFiles.DataModel
 
         public int PetOwnerId { get; set; }
         public PetOwner PetOwner { get; set; } = new PetOwner(); // Navigation property to PetOwner
+
+        //Hello, welcome to Pet Inventory
     }
 }
