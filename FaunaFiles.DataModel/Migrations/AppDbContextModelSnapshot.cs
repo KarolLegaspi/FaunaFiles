@@ -64,7 +64,7 @@ namespace FaunaFiles.DataModel.Migrations
 
                     b.HasIndex("PetOwnerId");
 
-                    b.ToTable("Pets");
+                    b.ToTable("Pets", (string)null);
                 });
 
             modelBuilder.Entity("FaunaFiles.DataModel.PetOwner", b =>
@@ -104,7 +104,7 @@ namespace FaunaFiles.DataModel.Migrations
 
                     b.HasKey("PetOwnerId");
 
-                    b.ToTable("PetOwners");
+                    b.ToTable("PetOwners", (string)null);
                 });
 
             modelBuilder.Entity("FaunaFiles.DataModel.Vet", b =>
@@ -141,7 +141,7 @@ namespace FaunaFiles.DataModel.Migrations
 
                     b.HasKey("VetId");
 
-                    b.ToTable("Vet");
+                    b.ToTable("Vet", (string)null);
                 });
 
             modelBuilder.Entity("FaunaFiles.DataModel.Pet", b =>
