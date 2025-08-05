@@ -1,3 +1,3 @@
-//Added Automapper, Repo, and VM.
+<p>//Added Automapper, Repo, and VM.</p>
 //Not sure if those things are gonna work, be wary. Especially the automapper...
-//Hello It's :D
+
